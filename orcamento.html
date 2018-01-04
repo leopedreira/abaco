@@ -12,7 +12,7 @@
   <link href="css/estilo.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>  
-  <nav class="azul">
+  <nav class="azul topo">
     <div class="container">
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Abaco Contabilidade</a>
@@ -34,21 +34,60 @@
     </nav>
 
     <main>
-    <div class="container">
-    <ul class="collapsible" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">edit</i>First</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">edit</i>Second</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">edit</i>Third</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-      </ul>
+<div class="container">
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Nome Completo</label>
+                    </div>
+                    <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Telefone</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="input-field col s12 row">
+                <select>
+                  <option value="" disabled selected>Escolha sua opção</option>
+                  <option value="1">Contabilidade em geral</option>
+                  <option value="2">Imposto de renda física e jurídica</option>
+                  <option value="3">Abertura, fechamento e legalização de empresas</option>
+                  <option value="4">Cálculos trabalhistas</option>
+                  <option value="5">Cálculos diversos</option>
+                </select>
+                <label>Especificação da área</label>
+              </div>
+        <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Insira sua mensagem aqui</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+                    
+        
+              <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="email" type="email" class="validate">
+                          <label for="email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  
+            <button class="btn waves-effect waves-teal azul" type="submit" name="action">Enviar
+                <i class="material-icons right">send</i>
+            </button>   
     </div>            
 </main>
 
@@ -96,6 +135,7 @@
   <script> 
     $( document ).ready(function(){
       $(".button-collapse").sideNav();
+      $('select').material_select();
     }); 
             
   </script>
