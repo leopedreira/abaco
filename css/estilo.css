@@ -16,3 +16,6 @@ body {
   .topo{
       margin-bottom: 80px;
   }
+  .input-field label {
+    color: #000;
+  }
