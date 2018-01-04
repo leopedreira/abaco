@@ -27,3 +27,9 @@ body {
     padding-top: 4px;
     padding-bottom: 2px;
  }
+ .borda{
+     border-left-width: 2px;
+     border-left-color: black;
+     border-left-style: solid;
+     padding-left: 2px;
+ }
