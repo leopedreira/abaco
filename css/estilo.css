@@ -28,8 +28,11 @@ body {
     padding-bottom: 2px;
  }
  .borda{
-     border-left-width: 2px;
-     border-left-color: black;
+     border-left-width: 3px;
+     border-left-color: #5b76c3;
      border-left-style: solid;
      padding-left: 2px;
+ }
+ #botao_orcamento{
+    margin-bottom: 30px;
  }
