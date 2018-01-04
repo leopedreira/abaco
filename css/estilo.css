@@ -4,3 +4,12 @@
 .page-footer{
     background-color: #5b76c3;
 }
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
